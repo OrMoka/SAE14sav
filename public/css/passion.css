@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Itim&family=Oswald:wght@300&family=Playfair+Display:ital@1&family=Smooch&display=swap');
+
+
+body{
+	font-family: 'Oswald', sans-serif;
+	padding: 0;
+	margin: 0;
+  
+  justify-content:center;
+  background-color: #1b1b1b;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 2em;
+  color: #FFFFA4
+}
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 2em;
+  color: #FFFFA4
+}
+a{
+	text-decoration: none;
+	color: #C0A056;
+}
+h4{
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 30px;
+	font-size: 2em;
+  color: #FFFFA4
+}
+h5{
+	text-align: center;
+	font-size: 1em;
+	color: #FFFFA4
+}
+
+form{
+	float: right;
+}
+
+
+/* *******************************Entête****************************************** */
+
+header nav{
+	overflow: hidden;
+	background: #1E0F00;
+	position: fixed;
+	width: 100%;
+	opacity: 0.90;
+  z-index: 1500;
+}
+header li{
+	float: right;
+	font-size: 1.2em;
+  font-family:Itim;
+}
+
+header li a{
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 12px 10px;
+}
+
+header #logo{
+	font-family:Itim;
+	font-weight: bold;
+	float: left;
+}
+/* ****************************BOUTON*************************** */
+
+/* Style du Button */
+.dropbtn {
+	background-color: #1E0F00;
+	color: #C0A056;
+	font-family: 'Oswald', sans-serif;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	display: block;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	position: fixed;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #FFFFA4;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+	
+	/* Links inside the dropdown */
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+	
+	/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {background-color: #FFFFA4}
+	
+	/* Show the dropdown menu on hover */
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+/* ********************************************************Principal********************************************************* */
+
+
+
+#jaime{
+	padding: 3em;
+	background-color: #303030;
+}
+
+#jaime h1{
+	font-family: '', cursive;
+	text-align: center;
+	color: #ff8989;
+	font-size: 1.5em;
+}
+#jaime h4{
+	font-family: '', cursive;
+	text-align: center;
+	color: #ff8989;
+	font-size: 0.9em;
+}
+
+#jaime li{
+	margin: 65px 100px 0 100px;
+	height: 350px;
+	width: 55%;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-width: 550px no-repeat;
+	position:relative;
+  	width:50em;
+  	background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+  	display:flex;
+  	justify-content:center;
+  	align-items:center;
+  	height:300px;
+  	border-radius:4px;
+  	text-align:center;
+  	overflow:hidden;
+  	transition:0.5s;
+}
+
+#jaime h3{
+	height: 60px;
+	width: 225px;
+	margin: 50px -180px 0 0;
+	font-size: 1.5em;
+	padding-top: 15px;
+	float: right;
+	text-align: center;
+	font-family: '', cursive;
+	text-align: center;
+	color: #ffa0a0;
+}
