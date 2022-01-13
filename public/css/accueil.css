@@ -212,6 +212,20 @@ header #logo{
 	border-radius: 20%;
 }
 
+.boutonbleu {
+	background-color: cyan;
+	color: black;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	font-family: 'Smooch', cursive;
+	text-align: center;
+	font-size: 0.8em;
+	margin: 15px
+	font-weight 300;
+	border-radius: 20%;
+}
+
 /* ***PIED DE PAGE*** */
 
 #copyright{
@@ -219,3 +233,437 @@ header #logo{
 	text-align: left;
 	color: black;
 }
+
+/* ***********************************ADMIN********************************************************** */
+#premierSemestre{
+	padding: 150px;
+}
+  
+/* ************************************VERIFIÉ************************************************** */
+  
+/* paramètre du conteneur (taille et position) */
+  .container{
+	position:relative;
+	width: 50em;
+	display:flex;
+	padding: 10px;
+	justify-content:space-around;
+  }
+  
+  .container .card
+  {
+	position:relative;
+	width:50em;
+	background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:300px;
+	border-radius:4px;
+	text-align:center;
+	overflow:hidden;
+	transition:0.5s;
+  }
+  .container .card:hover
+  {
+	transform:translateY(-10px);
+	box-shadow:0 15px 35px rgba(0,0,0,.5);
+  }
+  .container .card:before
+  {
+	content:'';
+	position:absolute;
+	top:0;
+	left:-50%;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,.03);
+	pointer-events:none;
+	z-index:1;
+  }
+  .percent
+  {
+	position:relative;
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	box-shadow: inset 0 0 50px #000;
+	background:#222;
+	font-style: 'Corinthia', arial;
+	z-index:1000;
+  }
+  
+  /**/
+  .percent .num
+  {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-style: corinthia;
+	border-radius:100%;
+  }
+  
+  /*Pourcentage quand neutre*/
+  .percent .num h2
+  {
+	color:#FFFFA4;
+	font-weight:700;
+	font-size:40px;
+	transition:0.5s;
+  }
+  
+  /*Pourcentage quand pointé*/
+  .card:hover .percent .num h2
+  {
+	color:#fff;
+	font-size:60px;
+  }
+  
+  /*Pourcent quand neutre*/
+  .percent .num h2 span
+  {
+	color:#FFFFA4;
+	font-size:24px;
+	transition:0.5s;
+  }
+  
+  /*Pourcent quand pointé*/
+  .card:hover .percent .num h2 span
+  {
+	color:#fff;
+  }
+  
+  /*Texte quand neutre*/
+  .text
+  {
+	position:relative;
+	color:#FFFFA4;
+	margin-top:20px;
+	font-weight:700;
+	font-size:18px;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	transition:0.5s;
+  }
+  
+  /*Texte quand pointé*/
+  .card:hover .text
+  {
+	color:#fff;
+  }
+  
+  
+  svg
+  {
+	position:relative;
+	width:150px;
+	height:150px;
+	z-index:1000;
+  }
+  
+  
+  /* épaisseur du cercle */
+  svg circle
+  {
+	width:100%;
+	height:100%;
+	fill:none;
+	stroke:#101010;
+	stroke-width:10;
+	stroke-linecap:round;
+	transform:translate(5px,5px);
+  }
+  
+  /* *Paramètre du cercle* */
+  svg circle:nth-child(2)
+  {
+	stroke-dasharray:1000;
+	stroke-dashoffset:1000;
+  }
+  
+  /* *Couleur du cercle 1* */
+  .card:nth-child(1) svg#un circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 36,52) / 100);
+	stroke:#00ff43;
+  }
+  
+  /* *Couleur du cercle 2* */
+  .card:nth-child(1) svg#deux circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 33) / 100);
+	stroke:#00ff43;
+  }
+  
+  /* *Couleur du cercle 3* */
+  .card:nth-child(1) svg#trois circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 44) / 100);
+	stroke:#00ff43;
+  }
+  
+  /* *Couleur du cercle 4* */
+  .card:nth-child(1) svg#quatre circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 34,32) / 100);
+	stroke:#00ff43;
+  }
+  
+  /* *Couleur du cercle 5* */
+  .card:nth-child(1) svg#cinq circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 38,72) / 100);
+	stroke:#00ff43;
+  }
+  
+  /* *Couleur du cercle 6* */
+  .card:nth-child(1) svg#six circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 38,72) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 7* */
+  .card:nth-child(1) svg#sept circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 39,875) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 8* */
+  .card:nth-child(1) svg#huit circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 44) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 9* */
+  .card:nth-child(1) svg#neuf circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 44) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 10* */
+  .card:nth-child(1) svg#dix circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 33) / 100);
+	stroke:#00ff43;
+  }
+  
+  /* *Couleur du cercle 11* */
+  .card:nth-child(1) svg#onze circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 40.86) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 12* */
+  .card:nth-child(1) svg#douze circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 36.67) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 13* */
+  .card:nth-child(1) svg#treize circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 44) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 14* */
+  .card:nth-child(1) svg#quatorze circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 33) / 100);
+	stroke:#00ff43;
+  }
+
+  /* *Couleur du cercle 15* */
+  .card:nth-child(1) svg#quinze circle:nth-child(2)
+  {
+	stroke-dashoffset:calc(1000 - (1000 * 41.25) / 100);
+	stroke:#00ff43;
+  }
+
+  /* containeurs 2 */
+  .container2{
+	position:relative;
+	width: 50em;
+	display:flex;
+	padding: 10px;
+	float:right;
+  }
+  
+  .container2 .card
+  {
+	position:relative;
+	width:50em;
+	background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:300px;
+	border-radius:4px;
+	text-align:center;
+	overflow:hidden;
+	transition:0.5s;
+  }
+  .container2 .card:hover
+  {
+	transform:translateY(-10px);
+	box-shadow:0 15px 35px rgba(0,0,0,.5);
+  }
+  .container2 .card:before
+  {
+	content:'';
+	position:absolute;
+	top:0;
+	left:-50%;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,.03);
+	pointer-events:none;
+	z-index:1;
+  }
+
+/* ******************************************CV***************************************************** */
+
+#vide{
+	padding-top: 4em;
+}
+
+#vide p{
+	padding-top: 3em;
+	color:#1b1b1b;
+}
+
+#gauche{
+	margin: 1em;
+	width: 24%; 
+	float:left;
+	border-width:1px;
+ 	border-style:solid;
+	border-color:#ccccff; 
+}
+
+#droite{
+	width: 70%; 
+	float:right;
+}
+
+/* **********************************************FOLIO********************************************************* */
+
+#Titre #textePrincipale{
+	padding-top: 25px;
+	background: #052705;
+	background-size: cover;
+	height: 200px;
+}
+
+#Titre h1{
+	font-family: '', cursive;
+	text-align: center;
+	color: #B3E99E;
+	font-size: 3em;
+	margin-top: 0 px;
+	text-shadow: 5px 2px 2px #2A7D2A;
+}
+
+#Titre h4{
+	font-family: '', cursive;
+	text-align: center;
+	color: #B3E99E;
+	font-size: 1em;
+	margin-top: 0 px;
+}
+
+/*Suite*/
+
+#premierSemestre{
+	padding: 3em;
+}
+
+#premierSemestre h2{
+	font-family: '', cursive;
+	text-align: center;
+	color: #D0FFD0;
+	font-size: 1,5em;
+}
+
+#premierSemestre p{
+	font-family: '', cursive;
+	text-align: center;
+	color: #B3E99E;
+	font-size: 1,5em;
+}
+
+/* ********************************************************Passion********************************************************* */
+
+
+
+#jaime{
+	padding: 3em;
+	background-color: #303030;
+}
+
+#jaime h1{
+	font-family: '', cursive;
+	text-align: center;
+	color: #ff8989;
+	font-size: 1.5em;
+}
+#jaime h4{
+	font-family: '', cursive;
+	text-align: center;
+	color: #ff8989;
+	font-size: 0.9em;
+}
+
+#jaime h5{
+	font-family: '', cursive;
+	text-align: center;
+	color: #ff8989;
+	font-size: 0.9em;
+}
+
+#jaime li{
+	margin: 65px 100px 0 100px;
+	height: 350px;
+	width: 55%;
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	max-width: 550px no-repeat;
+	position:relative;
+  	width:50em;
+  	background:linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+  	display:flex;
+  	justify-content:center;
+  	align-items:center;
+  	height:300px;
+  	border-radius:4px;
+  	text-align:center;
+  	overflow:hidden;
+  	transition:0.5s;
+}
+
+#jaime h3{
+	height: 60px;
+	width: 225px;
+	margin: 50px -180px 0 0;
+	font-size: 1.5em;
+	padding-top: 15px;
+	float: right;
+	text-align: center;
+	font-family: '', cursive;
+	text-align: center;
+	color: #ffa0a0;
+}
+

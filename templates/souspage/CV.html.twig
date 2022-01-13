@@ -1,54 +1,6 @@
-<html>
+{% extends 'base.html.twig' %}
 
-
-
-<head>
-	<meta charset="UTF-8">
-	
-	<link rel="stylesheet" href="CV.css">
-	
-	<title> Mon CV </title>
-</head>
-<body>
-<header>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container-fluid">
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarColor02"></div>
-			<ul class="navbar-nav me-auto">
-			  <li id="logo"><a href="#">VERDIER Nathanaël</a></li>
-			  <div class="dropdown">
-				<button class="dropbtn"> Autres </button>
-				<div class="dropdown-content">
-				  <a href="#"> Informations Personnelles</a>
-				  <a href="#"> Mon Journal Personel </a>
-				  <a href="#"> Mes Résultats/Diplômes </a>
-				  <a href="#"> Langues </a>
-				</div>
-			  </div>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Mon CV</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Mon PortFolio</a>		
-				<span class="visually-hidden">(actuel)</span>
-				</a>
-			  </li>
-			</ul>
-			<form class="d-flex">
-			  <input class="form-control me-sm-2" type="text" placeholder="Entrez texte">
-			  <button class="btn btn-secondary my-2 my-sm-0" type="submit">Rechercher</button>
-			</form>
-		  </div>
-		</div>
-	</nav>
-</header>
-
+{% block body %}
 <section id="vide">
 	<h1>Verdier Nathanaël</h1>
 </section>
@@ -114,4 +66,5 @@
 
 <section id="télé">
 	<a href="x" download="CV_Verdier">Télécharger le CV</a>
-</body>
+</se
+{% endblock %}
