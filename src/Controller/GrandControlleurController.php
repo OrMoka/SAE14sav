@@ -27,42 +27,42 @@ class GrandControlleurController extends AbstractController
      */
 	public function CV(): Response
 	{
-		return $this->render('grand_controlleur/CV.html.twig');
+		return $this->render('souspage/CV.html.twig');
 	}
 	/**
      * @Route("/Portfolio", name="folio")
      */
 	public function port(): Response
 	{
-		return $this->render('grand_controlleur/Folio.html.twig');
+		return $this->render('souspage/Folio.html.twig');
 	}
     /**
      * @Route("/Adminitrer1", name="adminS1")
      */
 	public function admin1(): Response
 	{
-		return $this->render('grand_controlleur/amdininistrerpre.html.twig');
+		return $this->render('souspage/amdininistrerpre.html.twig');
 	}
     /**
      * @Route("/ConnecterS1", name="connectS1")
      */
 	public function admin1(): Response
 	{
-		return $this->render('grand_controlleur/connecterpre.html.twig');
+		return $this->render('souspage/connecterpre.html.twig');
 	}
     /**
      * @Route("/Programmation1", name="progS1")
      */
 	public function admin1(): Response
 	{
-		return $this->render('grand_controlleur/programmerrpre.html.twig');
+		return $this->render('souspage/programmerrpre.html.twig');
 	}
     /**
      * @Route("/Passion", name="passion")
      */
 	public function passion(): Response
 	{
-		return $this->render('grand_controlleur/Passion.html.twig');
+		return $this->render('souspage/Passion.html.twig');
 	}
 
 }
