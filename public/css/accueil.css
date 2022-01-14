@@ -552,9 +552,21 @@ header #logo{
 	border-color:#ccccff; 
 }
 
+#gauche  h4{
+	font-size: 1.5em;
+	text-align: center;
+	color:cyan;
+}
+
 #droite{
 	width: 70%; 
 	float:right;
+}
+
+#droite  h4{
+	font-size: 1.5em;
+	text-align: center;
+	color:cyan;
 }
 
 /* **********************************************FOLIO********************************************************* */
