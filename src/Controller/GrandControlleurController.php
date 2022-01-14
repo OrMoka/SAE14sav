@@ -37,7 +37,7 @@ class GrandControlleurController extends AbstractController
 		return $this->render('souspage/Folio.html.twig');
 	}
     /**
-     * @Route("/Adminitrer1", name="adminS1")
+     * @Route("/Administrer1", name="adminS1")
      */
 	public function admin1(): Response
 	{
@@ -46,14 +46,14 @@ class GrandControlleurController extends AbstractController
     /**
      * @Route("/ConnecterS1", name="connectS1")
      */
-	public function admin1(): Response
+	public function conne1(): Response
 	{
 		return $this->render('souspage/connecterpre.html.twig');
 	}
     /**
      * @Route("/Programmation1", name="progS1")
      */
-	public function admin1(): Response
+	public function prog1(): Response
 	{
 		return $this->render('souspage/programmerrpre.html.twig');
 	}
