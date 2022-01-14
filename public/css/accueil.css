@@ -630,6 +630,19 @@ header #logo{
 	color: #ff8989;
 	font-size: 1.5em;
 }
+
+#jaime h3{
+	height: 60px;
+	width: 30%;
+	font-size: 1.5em;
+	padding-top: 15px;
+	float: right;
+	text-align: center;
+	font-family: '', cursive;
+	text-align: center;
+	color: #ffa0a0;
+}
+
 #jaime h4{
 	font-family: '', cursive;
 	text-align: center;
@@ -642,6 +655,8 @@ header #logo{
 	text-align: center;
 	color: #ff8989;
 	font-size: 0.9em;
+	width: 50%;
+	float: left;
 }
 
 #jaime li{
@@ -666,16 +681,5 @@ header #logo{
   	transition:0.5s;
 }
 
-#jaime h3{
-	height: 60px;
-	width: 225px;
-	margin: 50px -180px 0 0;
-	font-size: 1.5em;
-	padding-top: 15px;
-	float: right;
-	text-align: center;
-	font-family: '', cursive;
-	text-align: center;
-	color: #ffa0a0;
-}
+
 
